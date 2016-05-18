@@ -3,15 +3,15 @@
         .module('myApp')
         .controller('mainCtrl', mainCtrl);
 
-    //mainCtrl.$inject = ['$scope'];
+    mainCtrl.$inject = ['$scope'];
 
     /* @ngInject */
-    function mainCtrl() {
+    function mainCtrl($scope) {
         /* jshint validthis: true */
-        // var vm = this;
-        //
-        // vm.activate = activate;
-        // vm.title = 'mainCtrl';
+        var vm = this;
+
+        vm.activate = activate;
+        vm.title = 'mainCtrl';
 
         activate();
 
