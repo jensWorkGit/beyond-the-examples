@@ -1,3 +1,7 @@
+(function(angular) {
+    angular.module("myApp", []);
+}(angular));
+
 angular
     .module('myApp')
     .controller('mainController', mainController);
@@ -17,5 +21,6 @@ function mainController($scope) {
     ////////////////
 
     function activate() {
+        toastr.info('app loaded succesfully');
     }
 }
