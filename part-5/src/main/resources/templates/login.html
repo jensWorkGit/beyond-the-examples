@@ -6,7 +6,7 @@
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 
 </head>
-<body ng-controller="mainController">
+<body ng-controller="MyController">
 <div th:if="${param.error}">
     Invalid username and password.
 </div>
@@ -23,6 +23,7 @@
 <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
 <script type="text/javascript" src="../bower_components/toastr/toastr.js"></script>
+<script type="text/javascript" src="./app/app.module.js"></script>
 <script type="text/javascript" src="./app/app.js"></script>
 </body>
 </html>

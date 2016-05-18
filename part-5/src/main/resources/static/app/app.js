@@ -1,26 +1,27 @@
-(function(angular) {
-    angular.module("myApp", []);
-}(angular));
+(function () {
+    angular
+        .module('myApp')
+        .controller('mainCtrl', mainCtrl);
 
-angular
-    .module('myApp')
-    .controller('mainController', mainController);
+    //mainCtrl.$inject = ['$scope'];
 
-mainController.$inject = ['$scope'];
+    /* @ngInject */
+    function mainCtrl() {
+        /* jshint validthis: true */
+        // var vm = this;
+        //
+        // vm.activate = activate;
+        // vm.title = 'mainCtrl';
 
-/* @ngInject */
-function mainController($scope) {
-    /* jshint validthis: true */
-    var vm = this;
+        activate();
 
-    vm.activate = activate;
-    vm.title = 'mainController';
+        ////////////////
 
-    activate();
+        function activate() {
+            toastr.info('app loaded succesfully');
 
-    ////////////////
-
-    function activate() {
-        toastr.info('app loaded succesfully');
+            console.log('app loaded succesfully');
+        }
     }
-}
+}());
+
