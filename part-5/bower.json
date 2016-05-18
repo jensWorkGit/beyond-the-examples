@@ -1,0 +1,22 @@
+{
+  "name": "part-5",
+  "homepage": "https://github.com/jensWorkGit/beyond-the-examples",
+  "authors": [
+    "jens <jho@orgcomnet.de>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.5",
+    "jquery": "^2.2.3",
+    "bootstrap": "^3.3.6"
+  }
+}
