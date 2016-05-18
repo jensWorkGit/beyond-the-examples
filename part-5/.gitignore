@@ -1,0 +1,5 @@
+/classes
+/build
+/.idea
+/.gradle
+/src/main/resources/static/bower_components
